@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contact Section Styles */
+.contact {
+    max-width: 1200px;
+    margin: 140px auto; /* Center the section */
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Contact Banner Styles */
+.contactBanner {
+    text-align: center; /* Center align text */
+    margin-bottom: 10px; /* Space below this section */
+}
+
+.contactBanner h1 {
+    font-size: 2.5em; /* Large heading size */
+    color: #333; /* Dark text color */
+}
+
+.contactBanner p {
+    font-size: 1.2em; /* Slightly larger font for readability */
+    color: #666; /* Lighter text color for contrast */
+}
+
+/* Connect Section Styles */
+.connect {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.connectText {
+    padding: 20px 40px;
+    width: 60%; /* Text container takes up more space */
+}
+
+.connectText h1 {
+    font-size: 2em; /* Heading size for sub-section */
+    color: #333;
+}
+
+.connectText p {
+    font-size: 1em; /* Standard size for paragraph text */
+    color: #555; /* Medium gray for paragraph text */
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Image Styles */
+.connect img {
+    padding: 30px 40px;
+    width: 60%; /* Image takes up a portion of the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Link Styles */
+.connectText a {
+    color: #e67e22; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.connectText a:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .connect {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center align items in column layout */
+        text-align: center; /* Center align text in small screens */
+    }
+
+    .connect img {
+        width: 80%; /* Image takes up more width on small screens */
+        margin-bottom: 20px; /* Space below image when stacked */
+    }
+
+    .connectText {
+        width: auto; /* Allow text container to be full width in column layout */
+        padding-left: 0; /* Remove left padding in column layout */
+    }
+}

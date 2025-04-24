@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Footer Styles */
+.Mainfooter {
+    background-color: darkslategrey; /* Dark background for the footer */
+    color: #ffffff; /* White text color for contrast */
+}
+
+/* Footer Styles */
+.footer {
+    padding: 20px 20px; /* Padding around the footer */
+}
+
+.container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out footer columns */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-column {
+    text-align: center;
+    flex: 1; /* Allow each column to grow equally */
+    min-width: 200px; /* Minimum width for responsiveness */
+    margin: 10px; /* Space between columns */
+}
+
+.footer-column h3 {
+    font-size: 1.1em; /* Heading size for footer sections */
+    margin-bottom: 15px; /* Space below headings */
+}
+
+.footer-column p {
+    font-size: 0.9em; /* Standard size for paragraph text */
+    color: #dcdcdc; /* Light gray for paragraph text */
+    line-height: 1.5; /* Improved line spacing for readability */
+}
+
+/* Link Styles */
+.footer-column a {
+    color: #e67e22; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+    text-align: center; /* Center align bottom text */
+    margin-top: 20px; /* Space above bottom text */
+}
+
+.footer-bottom p {
+    color: #dcdcdc; /* Light gray color for copyright text */
+}
+
+/* Kazan Icon Styles */
+.kazan {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    background-color: darkorange; /* Facebook Messenger blue background */
+    border-radius: 30%; /* Circular background */
+    width: 35px; /* Fixed width for icon container */
+    height: 35px; /* Fixed height for icon container */
+    position: fixed; /* Fixed position on the screen (optional) */
+    bottom: 20px; /* Distance from the bottom of the viewport (optional) */
+    right: 20px; /* Distance from the right of the viewport (optional) */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.kazan a {
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 24px; /* Icon size */
+}
+
+/* Hover Effect for Kazan Icon */
+.kazan:hover {
+    background-color: #2d4373; /* Darker blue on hover for feedback */
+}

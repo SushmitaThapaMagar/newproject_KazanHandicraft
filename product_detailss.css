@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Styles */
+.container11 {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 20px auto; /* Center the container */
+    margin-top: 120px;
+    padding: 20px; /* Padding around the container */
+    background-color: #ffffff; /* White background for clarity */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Product Details Styles */
+.product-details22 {
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Image Styles */
+.product-image33 {
+    flex: 1; /* Allow image section to take up space */
+}
+
+.product-image33 img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+}
+
+/* Product Info Styles */
+.product-info0 {
+    flex: 2; /* Allow info section to take up more space */
+    margin-left: 20px; /* Space between image and info */
+}
+
+/* Heading Styles */
+.product-info0 h1 {
+    font-size: 28px; /* Larger font size for product name */
+    color: #333333; /* Dark color for text */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+/* Price Styles */
+.price {
+    font-size: 25px; /* Font size for price */
+    color: #e67e22; /* Distinct color for price to stand out */
+    margin-bottom: 15px; /* Space below price */
+}
+
+/* Description Styles */
+.product-info0 p {
+    font-size: 16px; /* Font size for description */
+    color: #666666; /* Lighter color for description text */
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Form Styles */
+form {
+    display: flex; /* Flexbox for button layout */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Button Styles */
+.btn {
+    flex-grow: 1; /* Buttons grow to fill space equally */
+    padding: 12px; /* Padding for button */
+    background-color: darkolivegreen; /* Button background color (blue) */
+    color: white; /* Button text color (white) */
+    border: none; /* Remove default border */
+    font-size: large;
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+.btn:hover {
+    background-color: olive; /* Darker shade on hover (blue) */
+}
+
+.btn:active {
+    transform: scale(0.95); /* Slightly shrink button on click for feedback */
+}

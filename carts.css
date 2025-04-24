@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container Styles */
+.container1 {
+    align-items: center;
+    width: auto;
+    margin: 145px 100px;
+    margin-bottom: 40px;
+    
+}
+
+/* Section Styles */
+.shopping-cart {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+.head1 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: darkslategray;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: darkred;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td img {
+    width: 100px; /* Set a fixed width for images */
+}
+
+/* Form Styles */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Action Button Styles */
+.delete-btn {
+    color: #dc3545; /* Red color for delete button */
+}
+
+.delete-btn:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Total Row Styles */
+.table-bottom {
+    font-weight: normal;
+}
+
+.table-bottom .option-btn1 {
+    background-color: darkred; /* Primary button color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.table-bottom td {
+    background-color: white; /* Light gray for total row */
+}
+
+/* Checkout Button Styles */
+.checkout-btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Align checkout button to the right */
+}
+
+.btn {
+    background-color: darkolivegreen; /* Primary button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: darkolivegreen; /* Darker blue on hover */
+}
+
+.disabled {
+    background-color: #6c757d; /* Gray for disabled button */
+}

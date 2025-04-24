@@ -1,0 +1,79 @@
+/* Reset some default styles */
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background for better contrast */
+    color: #333; /* Dark text for readability */
+}
+
+/* Message styles */
+.message {
+    background-color: #dff0d8; /* Light green background for success messages */
+    color: #3c763d; /* Dark green text */
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #d6e9c6; /* Border color matching the background */
+    border-radius: 5px;
+}
+
+/* Container styles */
+.container1 {
+    width: 90%;
+    margin: auto;
+}
+
+/* Heading styles */
+.heading1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+/* Product section styles */
+.products {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Space out product boxes */
+}
+
+/* Box styles for individual products */
+.box {
+    background-color: #fff; /* White background for product boxes */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px;
+    padding: 15px;
+    width: calc(33% - 40px); /* Responsive width calculation */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow effect */
+}
+
+/* Image styles */
+.box img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Price styling */
+.price {
+    font-size: 1.2em;
+    color: #b12704; /* Amazon-like red for prices */
+}
+
+/* Button styles */
+.btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

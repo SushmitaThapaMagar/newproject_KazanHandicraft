@@ -1,0 +1,81 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About Section Styles */
+.about {
+    max-width: 1200px;
+    margin: 140px auto; /* Center the section with margin */    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* About Text Styles */
+.aboutText {
+    text-align: center; /* Center align text */
+    margin-bottom: 30px; /* Space below this section */
+}
+
+.aboutText h1 {
+    font-size: 2.5em; /* Large heading size */
+    color: #333; /* Dark text color */
+}
+
+.aboutText p {
+    font-size: 1.2em; /* Slightly larger font for readability */
+    color: #666; /* Lighter text color for contrast */
+    line-height: 1.6; /* Improved line spacing */
+}
+
+/* About Us Section Styles */
+.aboutus {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.aboutus img {
+    width: 40%; /* Image takes up 40% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.dumiText {
+    width: 55%; /* Text container takes up remaining space */
+    padding-left: 20px; /* Space between image and text */
+}
+
+.dumiText h1 {
+    font-size: 2em; /* Heading size for sub-section */
+    color: #333;
+}
+
+.dumiText p {
+    font-size: 1em; /* Standard size for paragraph text */
+    color: #555; /* Medium gray for paragraph text */
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aboutus {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center align items in column layout */
+    }
+
+    .aboutus img {
+        width: 80%; /* Image takes up more width on small screens */
+        margin-bottom: 20px; /* Space below image when stacked */
+    }
+
+    .dumiText {
+        width: auto; /* Allow text container to be full width in column layout */
+        padding-left: 0; /* Remove left padding in column layout */
+        text-align: center; /* Center align text in small screens */
+    }
+}
