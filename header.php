@@ -18,6 +18,7 @@ if (mysqli_num_rows($select_cart) > 0) {
     <!-- External CSS -->
     <link rel="stylesheet" href="Connect.css">
     <!-- Font Awesome for Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200;400;700&family=Courgette&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
@@ -36,6 +37,16 @@ if (mysqli_num_rows($select_cart) > 0) {
                     <li><a id="blog" href="blog.php">Blog</a></li>
                     <li><a id="about" href="about.php">About</a></li>
                     <li><a id="contact" href="contact.php">Contact</a></li>
+
+
+                    <li>
+                        <form action="search.php" method="GET">
+                            <input type="text" name="query" placeholder="Search products..." required>
+                            <button type="submit">Search</button>
+                        </form>
+                    </li>
+
+
 
                     <?php if (isset($_SESSION['valid'])): ?>
                         <!-- Links for logged-in users -->

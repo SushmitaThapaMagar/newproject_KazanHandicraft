@@ -1,26 +1,65 @@
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin: 200px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background for the body */
+    margin: 120px;
+    padding: 10px; /* Add some padding around the page */
 }
 
-.search-container input {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space out items evenly */
+    margin: 20px 0;
 }
 
-.search-container button {
-  padding: 10px;
-  margin-left: 10px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
+.product-item {
+    background-color: #ffffff; /* White background for product items */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    margin: 15px; /* Space between items */
+    padding: 15px; /* Padding inside the item */
+    text-align: center; /* Center align text */
+    width: 220px; /* Fixed width for consistency */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth transform effect */
 }
 
-.search-container button:hover {
-  background-color: #0056b3;
+.product-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.product-item img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+
+.product-item h2 {
+    font-size: 1.2em; /* Adjust title size */
+    margin: 10px 0; /* Margin around the title */
+}
+
+.product-item p {
+    color: #555; /* Darker text for price */
+    font-weight: bold; /* Bold price text */
+}
+
+button {
+    background-color: darkred; /* Green background for buttons */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for buttons */
+    margin: 5px 0; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 0.9em; /* Adjust font size */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: darkred; /* Darker green on hover */
+}
+
+button:focus {
+    outline: none; /* Remove default focus outline */
 }

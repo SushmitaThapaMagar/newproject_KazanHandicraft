@@ -13,7 +13,7 @@
             <!-- Main Content -->
         <div class="mainPage"  >
             <div class="text">
-                <h1>Welcome to Kazan's Handicraft</h1>
+                <h1>Welcome to Kazan's Handicraft World</h1>
                 <p>Your one-stop shop for unique handcrafted items.</p>
                 <a href="home.php"><button class="button">Explore Now</button></a>
             </div>

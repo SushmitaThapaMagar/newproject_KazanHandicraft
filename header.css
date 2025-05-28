@@ -17,6 +17,38 @@ nav {
     padding: 15px 30px;
 }
 
+nav input[type="text"] {
+    margin: 3px;
+    padding: 8px;
+    border: 2px solid #c82333; /* Border color */
+    border-radius: 4px;
+    outline: none;
+    width: 200px; /* Adjust width as needed */
+}
+
+nav input[type="text"]:focus {
+    border-color: #a71c24; /* Darker border on focus */
+}
+
+nav button {
+    padding: 8px 12px;
+    background-color: #c82333; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+nav button:hover {
+    background-color: #a71c24; /* Darker button on hover */
+}
+
+
+
+
+
+
 .logo {
     font-family: 'Abril Fatface', cursive;
     color: #7a1f2a; /* Adjust color to match the image */

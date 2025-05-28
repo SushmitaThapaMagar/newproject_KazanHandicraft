@@ -60,6 +60,7 @@ if(isset($message)){
 ?>
 
 
+
  <!-- Products Section -->
       <section class="products">
          <h1 class="heading1">Latest Products</h1>
@@ -90,6 +91,9 @@ if(isset($message)){
             ?>
          </div>
       </section>
+
+
+      
    
 
    <!-- Custom JS file link -->

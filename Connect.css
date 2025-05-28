@@ -29,6 +29,40 @@ nav {
     transition: background-color 0.3s ease;
 }
 
+
+
+
+nav input[type="text"] {
+    padding: 5px;
+    border: 1px solid darkred; /* Border color */
+    border-radius: 4px;
+    outline: none;
+    width: 200px; /* Adjust width as needed */
+}
+
+nav input[type="text"]:focus {
+    border-color: darkred; /* Darker border on focus */
+}
+
+nav button {
+    padding: 5px 10px;
+    background-color: darkred; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+nav button:hover {
+    background-color: darkred; /* Darker button on hover */
+}
+
+
+
+
+
+
 nav .logo {
     font-size: 24px;
     color: darkred;

@@ -9,6 +9,9 @@ body {
 h1, h2 {
     color: #7a1f2a; /* Main heading color */
 }
+p {
+    color: #333;
+}
 
 a {
     text-decoration: none;
@@ -32,6 +35,7 @@ a {
     padding: 20px;
     border-radius: 8px;
 }
+
 
 .button {
     background-color: #7a1f2a; /* Button background color */
