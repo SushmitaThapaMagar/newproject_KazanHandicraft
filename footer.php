@@ -30,7 +30,7 @@ $all_product = $conn->query($sql);
 </head>
 
 <body>
-
+<div class="wrapper">
 
     <!-- Footer -->
 <div class="Mainfooter">
@@ -65,6 +65,7 @@ $all_product = $conn->query($sql);
         <p>&copy; 2024 Kazans. All rights reserved.</p>
     </div>
 </footer>
+</div>
 
     <div class="kazan"><a id="" onclick="" href="https://www.facebook.com/profile.php?id=100093683500155&sk=about"><i
                 class="fa-brands fa-facebook-messenger"></i></a>

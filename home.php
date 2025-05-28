@@ -47,23 +47,28 @@ if (isset($_POST['add_to_cart'])) {
 </head>
 
 <body>
-   <?php include 'header.php'; ?>
 
-   <?php
 
-if(isset($message)){
-   foreach($message as $message){
-      echo '<div class="message"><span>'.$message.'</span> <i class="fas fa-times" onclick="this.parentElement.style.display = `none`;"></i> </div>';
-   };
-};
+ <?php include 'header.php'; ?>
 
-?>
+<?php if (isset($message)) {
+    foreach ($message as $msg) {
+        if ($msg === 'Product already added to cart') {
+            echo '<div class="alert-message">
+                    <span>' . $msg . '</span>
+                    <i class="fas fa-times close-icon" onclick="this.parentElement.style.display = `none`;"></i>
+                  </div>';
+        }
+    }
+} ?>
 
 
 
  <!-- Products Section -->
       <section class="products">
          <h1 class="heading1">Latest Products</h1>
+         
+
          <div class="box-container">
             <?php
             $select_products = mysqli_query($conn, "SELECT * FROM `products`");

@@ -5,14 +5,38 @@
     box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;         /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
 /* Main Footer Styles */
 .Mainfooter {
-    background-color: darkslategrey; /* Dark background for the footer */
-    color: #ffffff; /* White text color for contrast */
+    background-color: darkslategrey;
+  color: #ffffff;
+  padding: 30px 0 10px 0;    /* Adjust as needed */
+  text-align: center;
+  margin-top: auto; 
 }
 
 /* Footer Styles */
 .footer {
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #335c57; /* Example color */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 100;
     padding: 20px 20px; /* Padding around the footer */
 }
 

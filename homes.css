@@ -7,8 +7,38 @@ body {
 }
 
 
+/* Alert Message Styles */
+.alert-message {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    padding: 15px;
+    margin-top: 120px; /* Space around the message */
+    border: 1px solid #f5c6cb; /* Border matching the alert background */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Position relative for the close icon */
+}
 
-/* Search Section */
+/* Close Icon Styles */
+.close-icon {
+    position: absolute; /* Position the icon absolutely */
+    top: 10px; /* Adjust to position it within the alert */
+    right: 15px; /* Position it to the right */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #721c24; /* Dark red color for the icon */
+    font-size: 18px; /* Size of the icon */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.close-icon:hover {
+    color: #a71c24; /* Darker shade on hover */
+}
+
+
+
 
 
 
@@ -21,14 +51,16 @@ body {
 }
 
 .heading1 {
-    margin-top: 90px;
+    margin-top: 30px;
     font-size: 2.5em;
     margin-bottom: 30px;
     color: #333;
 }
 
+
 /* Box Container */
 .box-container {
+    margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
