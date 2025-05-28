@@ -58,6 +58,7 @@ nav ul li {
     font-weight: bold;
 }
 
+
 nav ul li a {
     text-decoration: none;
     color: darkred;
@@ -70,27 +71,10 @@ nav ul li a:hover {
     color: #ff7200;
     border-bottom: 2px solid #ff7200;
 }
-/* 
-nav .search-container {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
 
-nav .search-container input {
-    border: 1px solid whitesmoke;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 16px;
-}
 
-nav .search-container button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    color: darkred;
-    font-size: 18px;
-} */
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

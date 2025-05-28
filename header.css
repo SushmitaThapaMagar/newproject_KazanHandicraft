@@ -1,48 +1,86 @@
-*{
-    padding: 0;
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
-    color: black;
+    background-color: #f5f5f5;
 }
 
-html{
-    font-size: 62.5%;
+.container {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    padding: 0 20px;
-    box-shadow: 1px 1px 1px 1px lightgrey;
+    padding: 15px 30px;
 }
 
-header a{
-    position: relative;
-    font-size: 2rem;
+.logo {
+    font-family: 'Abril Fatface', cursive;
+    color: #7a1f2a; /* Adjust color to match the image */
+    font-size: 24px;
 }
 
-header a:hover{
-    color: red;
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-header #main_tabs a{
-    margin-left: 1em;
+.menu li {
+    margin: 0 15px;
 }
 
-header a span{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: -30%;
-    right: -30%;
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    padding: .2em;
-    text-align: center;
+.menu a {
+    text-decoration: none;
+    color: #7a1f2a; /* Adjust color to match the image */
+    font-weight: 400;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Search Form Styles */
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 5px;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus {
+    border-color: #7a1f2a; /* Change border color on focus */
+}
+
+form button {
+    border: none;
+    background-color: #eaeaea; /* Light background for the search button */
+    color: #7a1f2a; /* Match the text color with the logo */
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    display: flex;
+    align-items: center; 
+}
+
+form button:hover {
+    background-color: #d4d4d4; /* Slightly darker on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Icon inside the button */
+form button i {
+    font-size: 16px; /* Adjust icon size */
 }

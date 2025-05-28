@@ -6,6 +6,8 @@ body {
     background-color: #f4f4f4;
 }
 
+
+
 /* Product Section */
 .products {
     padding: 20px 20px;
@@ -79,3 +81,6 @@ body {
 .btn:hover {
     background-color: olive; /* Darker blue on hover */
 }
+
+
+

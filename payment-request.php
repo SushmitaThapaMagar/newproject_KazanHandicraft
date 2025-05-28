@@ -91,7 +91,7 @@ curl_setopt_array($curl, array(
     CURLOPT_CUSTOMREQUEST => 'POST',
     CURLOPT_POSTFIELDS => $jsonData,
     CURLOPT_HTTPHEADER => array(
-        'Authorization: key live_secret_key_68791341fdd94846a146f0457ff7b455',
+        'Authorization: key live_secret_key_229ddd4e224b47bcbe9a2f52f6acc2f4',
         'Content-Type: application/json',
     ),
 ));
