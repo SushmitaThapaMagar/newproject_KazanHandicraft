@@ -30,8 +30,8 @@ if($_SERVER['REQUEST_METHOD']==="POST" && isset($_POST['order_btn'])){
        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
        CURLOPT_CUSTOMREQUEST => 'POST',
        CURLOPT_POSTFIELDS => '{
-   "return_url": "http://localhost/newproject/message.php",
-   "website_url": "http://localhost/newproject/index.php",
+   "return_url": "http://localhost/project06/message.php",
+   "website_url": "http://localhost/project06/index.php",
    "amount": "'.$grand_total .'",
    "purchase_order_id": "Order01",
    "purchase_order_name": "test",
@@ -45,7 +45,7 @@ if($_SERVER['REQUEST_METHOD']==="POST" && isset($_POST['order_btn'])){
 
    ',
        CURLOPT_HTTPHEADER => array(
-           'Authorization: key 298d9996382142efaf44f00b33f3fec1',
+           'Authorization: key e5f1d95ac5244cd4986bcf7660d695c8',
            'Content-Type: application/json',
        ),
    ));
