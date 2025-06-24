@@ -1,118 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap");
+
+/* Reset and Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #f5f5f5;
+  background-color: #eeeeee;
 }
 
-.container {
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
+/* Navigation Styles */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 20px 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  min-height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 nav input[type="text"] {
-    margin: 3px;
-    padding: 8px;
-    border: 2px solid #c82333; /* Border color */
-    border-radius: 4px;
-    outline: none;
-    width: 200px; /* Adjust width as needed */
+  padding: 5px;
+  border: 1px solid darkred; /* Border color */
+  border-radius: 4px;
+  outline: none;
+  width: 200px; /* Adjust width as needed */
 }
 
 nav input[type="text"]:focus {
-    border-color: #a71c24; /* Darker border on focus */
+  border-color: darkred; /* Darker border on focus */
 }
 
 nav button {
-    padding: 8px 12px;
-    background-color: #c82333; /* Button color */
-    color: white; /* Button text color */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 5px;
+  padding: 5px 10px;
+  background-color: darkred; /* Button color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 nav button:hover {
-    background-color: #a71c24; /* Darker button on hover */
+  background-color: darkred; /* Darker button on hover */
 }
 
-
-
-
-
-
-.logo {
-    font-family: 'Abril Fatface', cursive;
-    color: #7a1f2a; /* Adjust color to match the image */
-    font-size: 24px;
+nav .logo {
+  font-size: 24px;
+  color: darkred;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
-.menu ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+nav .logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
 }
 
-.menu li {
-    margin: 0 15px;
+nav .menu {
+  display: flex;
+  align-items: center;
 }
 
-.menu a {
-    text-decoration: none;
-    color: #7a1f2a; /* Adjust color to match the image */
-    font-weight: 400;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.menu a:hover {
-    text-decoration: underline;
+nav ul li {
+  font-weight: bold;
 }
 
-/* Search Form Styles */
-form {
-    display: flex;
-    align-items: center;
+nav ul li a {
+  text-decoration: none;
+  color: darkred;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-input[type="text"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 200px;
-    margin-right: 5px;
-    transition: border-color 0.3s; /* Smooth transition for border color */
+nav ul li a:hover {
+  color: #ff7200;
+  border-bottom: 2px solid #ff7200;
 }
 
-input[type="text"]:focus {
-    border-color: #7a1f2a; /* Change border color on focus */
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .menu {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav .search-container input {
+    width: calc(100% - 50px);
+  }
 }
 
-form button {
-    border: none;
-    background-color: #eaeaea; /* Light background for the search button */
-    color: #7a1f2a; /* Match the text color with the logo */
-    padding: 8px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    display: flex;
-    align-items: center; 
+/* Main Content */
+.mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  height: 50vh;
+  text-align: center;
 }
 
-form button:hover {
-    background-color: #d4d4d4; /* Slightly darker on hover */
-    color: white; /* Change text color on hover */
+.mainPage img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Icon inside the button */
-form button i {
-    font-size: 16px; /* Adjust icon size */
+.text h1 {
+  font-size: 48px;
+  color: darkred;
+}
+
+.text p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.text button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.text button:hover {
+  background-color: #ff7200;
+}
+
+/* Miscellaneous */
+.button {
+  background-color: palevioletred;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: darkred;
 }

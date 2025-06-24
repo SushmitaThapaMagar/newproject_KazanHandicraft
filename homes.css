@@ -1,123 +1,111 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
-
 
 /* Alert Message Styles */
 .alert-message {
-    background-color: #f8d7da; /* Light red background */
-    color: #721c24; /* Dark red text */
-    padding: 15px;
-    margin-top: 120px; /* Space around the message */
-    border: 1px solid #f5c6cb; /* Border matching the alert background */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center the text */
-    font-size: 16px; /* Font size */
-    width: 100%; /* Full width */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    position: relative; /* Position relative for the close icon */
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+  padding: 15px;
+  margin-top: 120px; /* Space around the message */
+  border: 1px solid #f5c6cb; /* Border matching the alert background */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  font-size: 16px; /* Font size */
+  width: 100%; /* Full width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: relative; /* Position relative for the close icon */
 }
 
 /* Close Icon Styles */
 .close-icon {
-    position: absolute; /* Position the icon absolutely */
-    top: 10px; /* Adjust to position it within the alert */
-    right: 15px; /* Position it to the right */
-    cursor: pointer; /* Pointer cursor on hover */
-    color: #721c24; /* Dark red color for the icon */
-    font-size: 18px; /* Size of the icon */
-    transition: color 0.3s; /* Smooth color transition */
+  position: absolute; /* Position the icon absolutely */
+  top: 10px; /* Adjust to position it within the alert */
+  right: 15px; /* Position it to the right */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #721c24; /* Dark red color for the icon */
+  font-size: 18px; /* Size of the icon */
+  transition: color 0.3s; /* Smooth color transition */
 }
 
 .close-icon:hover {
-    color: #a71c24; /* Darker shade on hover */
+  color: #a71c24; /* Darker shade on hover */
 }
-
-
-
-
-
-
 
 /* Product Section */
 .products {
-    padding: 20px 20px;
-    text-align: center;
-    background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
 }
 
 .heading1 {
-    margin-top: 30px;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
 }
-
 
 /* Box Container */
 .box-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Space between boxes */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between boxes */
 }
 
 /* Individual Product Box */
 .box {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px; /* Fixed width for boxes */
-    height: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px; /* Fixed width for boxes */
+  height: 450px;
 }
 
 .box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Product Image */
 .box img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Product Name */
 .box h3 {
-    font-size: 1.5em;
-    margin: 7px 0;
-    color: #555;
+  font-size: 1.5em;
+  margin: 7px 0;
+  color: #555;
 }
 
 /* Price */
 .price {
-    font-size: 1.2em;
-    color: #e67e22; /* Orange color for price */
+  font-size: 1.2em;
+  color: #e67e22; /* Orange color for price */
 }
 
 /* Button Styles */
 .btn {
-    background-color: darkolivegreen; /* Blue background */
-    color: white; /* White text */
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+  background-color: darkolivegreen; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: olive; /* Darker blue on hover */
+  background-color: olive; /* Darker blue on hover */
 }
-
-
-

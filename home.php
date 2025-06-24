@@ -96,19 +96,17 @@ if (isset($_POST['add_to_cart'])) {
             ?>
          </div>
       </section>
-
-
-      
    
 
    <!-- Custom JS file link -->
    <script src="script.js"></script>
-   <?php 
-   include 'footer.php';
-   ?>
+
    
 </body>
 
 
 </html>
 
+   <?php 
+   include 'footer.php';
+   ?>

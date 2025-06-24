@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php include 'header.php'; ?>
-    
+<div class="main-content">
             <!-- Main Content -->
         <div class="mainPage"  >
             <div class="text">
@@ -52,7 +52,12 @@
     <script>
         document.getElementById('heroSection').style.display = 'initial';
     </script>
+    </div>
 
-<?php include 'footer.php'; ?>
+
 </body>
 </html>
+   <?php 
+   include 'footer.php';
+   ?>
+
